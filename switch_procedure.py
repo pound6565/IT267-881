@@ -14,3 +14,5 @@ if __name__ == "__main__":
     print(f'สถานะไฟ: {switch_status}')
     turn_on()
     turn_off()
+    turn_off()
+    turn_off()
