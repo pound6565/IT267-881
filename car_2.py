@@ -1,6 +1,3 @@
-from cgitb import text
-
-
 class Car:
     brand = 'Toyota'
 

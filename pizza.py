@@ -1,11 +1,11 @@
 class Pizza:
-    brand = 'Toyota'
-
+    
     def __init__(self, ingredients):
         self.ingredients = ingredients
   
     def __repr__(self):
         #ส่งคืนค่าที่สามารถพิมพ์ได้
+        return f'Pizza ({self.ingredients})'
 
     @classmethod
     def margherita(cls):
@@ -20,7 +20,7 @@ class Pizza:
         #มักจะใช้เป็น utility หรือ helper funtion เพื่อทำให้ code เป็น modular 
     def size(ch):
         ch = ch.upper()
-        if ch == 's':
+        if ch == '':
             return 'small: 6 inches, 4 slices'
         elif ch == 'L':
             return 'Large: 14 inches, 10 slices'
