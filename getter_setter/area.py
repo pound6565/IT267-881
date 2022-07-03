@@ -3,25 +3,23 @@ class Area:
         self.__base = 0
         self.__high = 0
 
-    @property #getter ของ base
+
+    @property # getter for base
     def base(self):
         return self.__base
-    
-    #setter ของ base
-    @base.setter
+
+    @base.setter #setter for base
     def base(self,value):
         self.__base = value
-    
-    #getter ของ high
-    @property
+
+
+    @property # getter for high
     def high(self):
         return self.__high
-    
-    #setter ของ high
-    @high.setter
+
+    @high.setter #setter for base
     def high(self,value):
-        self.__high = value #self.high = value
-    
+        self.__high = value     #self.__high = value 
+
     def compute_area(self):
-        return 0.5 * self.base * self.high
-        #return 0.5 * self.__base * self.__high
+        return 0.5 * self.base * self.high     #return 0.5 * self.__base * self.__high
