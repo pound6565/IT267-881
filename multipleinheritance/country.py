@@ -16,6 +16,9 @@ class Country(Geographic,Temperature):
 
     def showdetail(self):
         #ชื่อประเทศ
+        print(f'Country name: {self.name}')
+        
+        #สถานที่ตั้ง
         print(self.getcordinate())
 
         #แสดงขนาดพื้นที่, จำนวนประชากร และความหนาแน่นของประชากร
@@ -24,7 +27,7 @@ class Country(Geographic,Temperature):
         print(f'Density: {self.getpopulation_density()}')
 
         #Time Zone, Climate, Temperature, Weather
-        print(f'Timezone: {self.gettimezone}')
+        print(f'Timezone: {self.gettimezone()}')
         print(f'climate: {self.getclimate()}')
         print(f'Timeperature(C): {self.celsius}')
         print(f'Timeperature(F): {self.getfarenheit()}')
