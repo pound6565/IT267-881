@@ -9,7 +9,6 @@ b1.v_detail()
 
 #object motocycle
 from motocycle import Motocycle
-
 m1 = Motocycle('Honda',2,100,'v345')
 m1.set_cc(1200)
 m1.v_detail()

@@ -1,4 +1,5 @@
 class Vehicle:
+    
     def __init__(self,name,wheels,max,vin) -> None:
         self.name = name
         self.wheels = wheels
