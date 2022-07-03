@@ -19,7 +19,12 @@ class Area:
 
     @high.setter #setter for base
     def high(self,value):
-        self.__high = value
+        self.high = value     #self.__high = value 
+
+    def compute_area(self):
+        return 0.5 * self.base * self.high     #return 0.5 * self.__base * self.__high
+
+
 
     
     
