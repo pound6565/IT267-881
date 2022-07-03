@@ -1,34 +1,33 @@
 from math import pi
 from shape import Shape
-
 #สี่เหลื่ยม
 class Square(Shape):
-    def __init__(self) -> None:
+    def __init__(self,length = 0) -> None:
         super().__init__()
         self.shape = 'Square'
-        self.__lenght = 0
+        self.__length = length
 
     @property
-    def lenght(self):
-        return self.__lenght
+    def length(self):
+        return self.__length
 
-    @lenght.setter
-    def lenght(self,value):
-        self.lenght = value
+    @length.setter
+    def length(self,value):
+        self.__length = value
 
     def compute_area(self):
         super().compute_area()
-        self.area = self.lenght ** 2
+        self.area = self.length ** 2
 
     def print_square(self):
         print(f'{self.shape} Area = {self.area:.2f}')
 
 #วงกลม
 class Circle(Shape):
-    def __init__(self) -> None:
+    def __init__(self,radius = 0) -> None:
         super().__init__()
         self.shape = 'Circle'
-        self.__radius = 0
+        self.__radius = radius
 
     @property
     def radius(self):
@@ -36,7 +35,7 @@ class Circle(Shape):
 
     @radius.setter
     def radius(self,value):
-        self.radius = value
+        self.__radius = value
 
     def compute_area(self):
         super().compute_area()
@@ -47,11 +46,11 @@ class Circle(Shape):
 
 #สามเหลื่ยม
 class Triangle(Shape):
-    def __init__(self) -> None:
+    def __init__(self,base = 0,high = 0) -> None:
         super().__init__()
         self.shape = 'Triangle'
-        self.__base = 0
-        self.__high = 0
+        self.__base = base
+        self.__high = high
 
     @property #getter base
     def base(self):
@@ -59,7 +58,7 @@ class Triangle(Shape):
 
     @base.setter #seter base
     def base(self,value):
-        self.base = value
+        self.__base = value
 
     @property #getter high
     def high(self):
@@ -67,7 +66,7 @@ class Triangle(Shape):
 
     @high.setter #seter high
     def high(self,value):
-        self.high = value
+        self.__high = value
 
     def compute_area(self):
         super().compute_area()
