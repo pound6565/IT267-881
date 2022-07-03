@@ -1,0 +1,18 @@
+#temperature
+class Temperature:
+    def setcelsius(self,temp):
+        self.celsius = temp
+    
+    def getfarenheit(self):
+        farenheit = (self.celsius * 1.8) + 32    #return (self.celsius * 1.8) + 32
+        return farenheit
+
+    def getweather(self):
+        if self.celsius <= 0:
+            return 'Freezing'
+        elif self.celsius <= 18:
+            return 'Cold'
+        elif self.celsius <= 28:
+            return 'Warm'
+        else:
+            return 'Hot'
