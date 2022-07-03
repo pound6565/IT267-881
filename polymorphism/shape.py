@@ -1,6 +1,3 @@
-from sunau import Au_read
-
-
 class Shape:
     def __init__(self) -> None:
         self.__shape = None
