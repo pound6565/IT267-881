@@ -11,10 +11,10 @@ class Mule(Horse,Donkey):
     def show_info(self):
         print(f'***** Munu Info *****')
         print(f'Name: {self.show_name()}')
-        print(f'Color: {self.color()}')
-        print(f'Max Height: {self.max_height()}')
-        print(f'Age: {self.age()}')
-        print(f'Weight: {self.weight()}')
+        print(f'Color: {self.color}')
+        print(f'Max Height: {self.max_height}')
+        print(f'Age: {self.age}')
+        print(f'Weight: {self.weight}')
         
 
     
