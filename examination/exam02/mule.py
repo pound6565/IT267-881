@@ -21,7 +21,7 @@ class Mule(Horse,Donkey):
 # obj
 if __name__ == "__main__":
    
-    mule1 = Mule()
+    mule1 = Mule(200,'Munu','Blue-eyed cream',3,200)
     mule1.show_info
 
     
